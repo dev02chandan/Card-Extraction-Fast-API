@@ -1,0 +1,9 @@
+```json
+{
+  "Name": "DHIMAN BANERJEE",
+  "designation": "General Manager (TSS - Automation Services)",
+  "mobile number": "+919124610377",
+  "Email Id": "dhimman.banerjee@trlkrosaki.com",
+  "City": "Kolkata"
+}
+```
