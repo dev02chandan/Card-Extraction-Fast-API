@@ -6,4 +6,12 @@
   "Email Id": "dhimman.banerjee@trlkrosaki.com",
   "City": "Kolkata"
 }
+``````json
+{
+  "number_plate": "9F37349"
+}
+``````json
+{"number_plate": "9F37349"}
+``````json
+{"number_plate": "9F37349"}
 ```

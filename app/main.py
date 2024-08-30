@@ -10,8 +10,19 @@ genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
 app = FastAPI()
 
-# Define the prompt
-custom_prompt = "Extract Name, designation, mobile number, Email Id, and City in JSON proper spelling"
+# EDIT THIS TO USE FOR YOUR USECASE (EXAMPLES GIVEN BELOW)
+custom_prompt = 'Extract the number plate from the provided image of a truck. Return the result in a JSON format with the key "number_plate" and the value as the extracted number plate. If the number plate cannot be identified, return null for the value.'
+
+
+# FOR EXTRACTING DRIVING LICENSE USE THIS:
+
+custom_prompt2 = 'Extract the driving license number from the provided image of a driving license. Return the result in a JSON format with the key "driving_license_number" and the value as the extracted number. If the number cannot be identified, return null for the value.'
+
+# FOR EXTRACTING CHASIS NUMBER USE THIS:
+
+custom_prompt3 = 'Extract the chassis number from the provided image of a vehicle. Return the result in a JSON format with the key "chassis_number" and the value as the extracted number. If the number cannot be identified, return null for the value.'
+
+
 
 @app.post("/extract-info/")
 async def extract_info(file: UploadFile = File(...)):
